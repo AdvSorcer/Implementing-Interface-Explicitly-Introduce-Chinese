@@ -14,6 +14,18 @@ Console.WriteLine(student2.Id); // 2
 IStudent3 student3 = new Student();
 Console.WriteLine(student3.Id);  // 777
 
+// FOR DI 參考 :
+DoThis(student);
+DoThis(student2);
+
+void DoThis(IStudent2 student)
+{
+    Console.WriteLine($"{student.Id}");
+}
+
+/// <summary>
+///  學生  繼承123
+/// </summary>
 public class Student : IStudent, IStudent2 , IStudent3
 {
     //明確實作 i 1
