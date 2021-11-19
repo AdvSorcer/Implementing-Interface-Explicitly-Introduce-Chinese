@@ -15,12 +15,12 @@ IStudent3 student3 = new Student();
 Console.WriteLine(student3.Id);  // 777
 
 // FOR DI 參考 :
-DoThis(student);
-DoThis(student2);
+DoIStudent2(student); //2
+DoIStudent2(student2); //2
 
-void DoThis(IStudent2 student)
+void DoIStudent2(IStudent2 student)
 {
-    Console.WriteLine($"{student.Id}");
+    Console.WriteLine($"{student.Id}"); 
 }
 
 /// <summary>
