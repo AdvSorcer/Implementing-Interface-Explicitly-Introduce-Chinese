@@ -1,5 +1,4 @@
-﻿//蔡昀翰整理
-//普通實作
+﻿//普通實作
 Student student = new Student();
 Console.WriteLine(student.Id);  // 777
 
